@@ -1,4 +1,3 @@
-=======
 Exam 1
 
 Integrantes:
@@ -24,4 +23,18 @@ Primeros pasos
 4. Crear las máquinas virtuales
 
 	vagrant up
+	
+Aprovisionamiento:
+
+Una vez estén las máquinas corriendo, se debe ingresar a la máquina master:
+
+	vagrant ssh master
+	
+De allí entrar al root de master:
+
+	sudo su
+	
+Y después ejecutar:
+
+	salt '*' state.apply
 
